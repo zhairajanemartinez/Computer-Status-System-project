@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex; /* Make the navigation bar horizontal */
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Align items vertically */
+    background-color: aquamarine; /* Background color for the navbar */
+    padding: 1rem; /* Add padding around the navbar */
+    gap: 20px; /* Add spacing between the links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set the text color */
+    font-size: 1.5rem; /* Set the font size */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align icons and text vertically */
+    gap: 8px; /* Add spacing between the icon and text */
+    padding: 0.5rem 1rem; /* Add padding inside the links */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a i {
+    font-size: 1.5rem; /* Set the size of the icons */
+}
+
+nav a:hover {
+    background-color: #800080; /* Dark purple background on hover */
+    color: white; /* White text on hover */
+    opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Main Content Area */
+main {
+   flex-grow: 1;
+   justify-content: flex-start;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #5f9ea0; /* Cadet blue */
+}
+
+/* Table Styling (Student Dashboard and Computers) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Titles for Pages */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+}
+
+/* Messages (e.g., Errors) */
+.message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Style for the main post list title */
+.post-list-title {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Container for the posts */
+.post-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange posts vertically */
+    gap: 1.5rem; /* Add spacing between posts */
+    width: 100%; /* Full width of the page */
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 1rem; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Add a border to define the rectangle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for each post */
+.post {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange content vertically */
+    gap: 0.5rem; /* Add spacing between elements inside the post */
+    padding: 1rem;
+    border: 1px solid #ddd; /* Add a border around each post */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color:lightgreen; /* White background for each post */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each post */
+}
+
+/* Style for each post title */
+.post-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the post date */
+.post-date {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the post body */
+.post-body {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+

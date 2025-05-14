@@ -1,0 +1,170 @@
+.html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Navigation Styling */
+nav {
+    display: flex; /* Make the navigation bar horizontal */
+    justify-content: center; /* Center the navigation items */
+    align-items: center; /* Align items vertically */
+    background-color: aquamarine; /* Background color for the navbar */
+    padding: 1rem; /* Add padding around the navbar */
+    gap: 20px; /* Add spacing between the links */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Set the text color */
+    font-size: 1.5rem; /* Set the font size */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Align icons and text vertically */
+    gap: 8px; /* Add spacing between the icon and text */
+    padding: 0.5rem 1rem; /* Add padding inside the links */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav a i {
+    font-size: 1.5rem; /* Set the size of the icons */
+}
+
+nav a:hover {
+    background-color: #800080; /* Dark purple background on hover */
+    color: white; /* White text on hover */
+    opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Style for the authentication form */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.container form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+    background-color: #315f86;
+}
+
+/* Style for error messages */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    color: red; /* Set text color to red for error messages */
+    font-size: 14px; /* Set font size */
+}
+
+.table {
+    width: 100%; /* Make the table take the full width of its container */
+    margin: 20px auto; /* Center the table vertically with some margin */
+    border-collapse: collapse; /* Remove gaps between table cells */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.table th, .table td {
+    padding: 1rem; /* Add padding inside cells */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Add a border between cells */
+    width: 100%;
+}
+
+.table th {
+    background-color: #4682b4; /* Steel blue background for headers */
+    color: white; /* White text for headers */
+    font-weight: bold; /* Make header text bold */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+.table tr:hover {
+    background-color: #f1f1f1; /* Highlight rows on hover */
+}
+
+.table i {
+    transition: transform 0.2s ease; /* Smooth hover effect */
+}
+
+.table i:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+/* Style for the "Use" button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #315f86; /* Darker blue on hover */
+}
+

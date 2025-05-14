@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Computer Status</h2>
+    <p>Below is the list of all computers and their availability:</p>
+</div>
+
+<div class="table">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Computer Name</th>
+                <th>Status</th>
+                <th>Action</th> <!-- Add a column for actions -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for Computer in Computers %}
+            <tr>
+                <td>{{ Computer.name }}</td>
+                <td>
+                    {% if Computer.status == 'Available' %}
+                        <i class="fas fa-check-circle" style="color: green;"></i> <!-- Green check icon -->
+                    {% else %}
+                        <i class="fas fa-times-circle" style="color: red;"></i> <!-- Red cross icon -->
+                    {% endif %}
+                </td>
+                <td>
+                    {% if Computer.status == 'Available' %}
+                        <a href="{% url 'use_computer_auth' Computer.id %}" class="btn btn-primary">Use</a> <!-- Redirect to authentication page -->
+                        <a href="{% url 'book_computer' Computer.id %}" class="btn btn-secondary">Book</a> <!-- Redirect to booking page -->
+                    {% else %}
+                        <span style="color: gray;">Not Available</span> <!-- Show "Not Available" for unavailable computers -->
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
